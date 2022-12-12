@@ -1,4 +1,4 @@
-
+/* index.html */
 html,body {
     height: 100%;
   }
@@ -87,6 +87,7 @@ html,body {
     text-decoration: underline;
   }
 
+/* about.html */
 .otherCenter{
     height: 100%;
     background:rgb(0,0,0);
@@ -110,12 +111,43 @@ html,body {
     font-size:x-large;
 }
 
-.card {
-    height: 100%;
-    background:rgba(0,0,0,0.5);
+.propContainer {
+  position: relative;
+  height: 100%;
 }
 
-.card-img {
-    height: 100%;
-    max-width: 100%;
+.propImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+
+.textContainer {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.propContainer:hover .propImage {
+  opacity: 0.3;
+}
+
+.propContainer:hover .textContainer {
+  opacity: 1;
+}
+
+.propText {
+  color: white;
+  font-size: 16px;
+  padding: 16px 28px;
+}
+
+/* project.html */
