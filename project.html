@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- endbuild -->
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- endbuild -->
 
-    <title>Daniel Choi, Projects.</title>
+  <title>Daniel Choi, Projects.</title>
 </head>
 
 
 <body>
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-sm-1 sideBar">
-                <nav class="d-flex flex-column p-3">      
-                    <a class="nav-link" href="index.html">Home</a>
-                    <hr>
-                    <a class="nav-link active" href="#">Project</a>
-                    <hr>
-                    <a class="nav-link" href="about.html">About</a>
-                </nav>
-            </div>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col col-sm-1 sideBar">
+        <nav class="d-flex flex-column p-3">      
+          <a class="nav-link" href="index.html">Home</a>
+          <hr>
+          <a class="nav-link active" href="#">Project</a>
+          <hr>
+          <a class="nav-link" href="about.html">About</a>
+        </nav>
+      </div>
 
-
-            <div class="col-sm-10 myCenter">
-                hi
-            </div>
-
-
-            <div class="col-sm-1 sideBar">
-                <nav class="d-flex flex-column p-3">      
-                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dan_dh_choi/">Instagram</a>
-                    <hr>
-                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-daehyun-choi-615355234/">Linkedin</a>
-                    <hr>
-                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/DanielChoi95">Github</a>
-                </nav>
-            </div>
+      <div class="col col-sm-10 otherCenter">
+        <div class="row title">
+          Projects I've Done So Far
         </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/golf.jpg" class="d-block h-100 w-100" alt="golf">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Country Club Autobooking</h3>
+                <p>
+                  Using Selenium-Python, the app can autobook Gyeongju-Silla Country Club.<br>
+                  When this app is excuted, it will search an available reservation time at 10AM,<br>
+                  enter the reservation page, input authentication numbers, and complete autobooking.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/chrome.jpg" class="d-block h-100 w-100" alt="chrome">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Chrome Extension - New Tab</h3>
+                <p>
+                  Built with React-native and Typescript, it will replace a new tab with our new tab.<br>
+                  The background image is NASA's astronomy picture of the day (NASA APOD).<br>
+                  Sticky notes are available in the new tab.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/hidden.jpg" class="d-block h-100 w-100" alt="hidden">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Hidden Watermark Embedding App</h3>
+                <p>
+                  This is a Python app which can embed a hidden watermark in pictures.<br>
+                  You can type your watermark text.
+                  It will useful when you are doing a classified team project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col col-sm-1 sideBar">
+        <nav class="d-flex flex-column p-3">      
+          <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dan_dh_choi/">Instagram</a>
+          <hr>
+          <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-daehyun-choi-615355234/">Linkedin</a>
+          <hr>
+          <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/DanielChoi95">Github</a>
+        </nav>
+      </div>
     </div>
-
-    <footer>
-        email
-    </footer>
-
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+  </div>
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

@@ -91,16 +91,7 @@ html,body {
 .otherCenter{
     height: 100%;
     background:rgb(0,0,0);
-}
-
-.leftCol {
-    background:rgba(0,0,0,0.5);
-    height: 100%;
-}
-
-.rightCol {
-    background:rgba(0,0,0,0.5);
-    height: 100%;
+    color:#fff;
 }
 
 .title {
@@ -151,3 +142,10 @@ html,body {
 }
 
 /* project.html */
+.carousel {
+  height:90%;
+}
+
+.carousel-inner {
+  height:100%;
+}
