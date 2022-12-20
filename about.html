@@ -6,9 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
 
@@ -17,11 +15,15 @@
 
 
 <body>
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-sm-1 sideBar">
-                <nav class="d-flex flex-column p-3">      
-                    <a class="nav-link active" href="index.html">Home</a>
+    <div class="container-fluid">
+        <div class="row title p-3">
+            4 Words Representing Me
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-1 sideBar">
+                <nav class="nav flex-row flex-sm-column p-3">      
+                    <a class="nav-link" href="index.html">Home</a>
                     <hr>
                     <a class="nav-link" href="project.html">Project</a>
                     <hr>
@@ -30,44 +32,39 @@
             </div>
 
 
-            <div class="col-sm-10 otherCenter">
-                <div class="row title">
-                    4 Words Representing Myself
-                </div>
-
-                <div class="row mt-2" style="height:40%">
-                    <div class="col col-sm-6 h-100" id="active">
+            <div class="col-12 col-sm-10 center">
+                <div class="row justify-content-evenly">
+                    <div class="col-12 col-sm-6">
                         <div class="propContainer">
                             <img src="img/climbing.jpg" alt="active" class="propImage">
                             <div class="textContainer">
                                 <div class="propText">
                                     <h1>Active</h1>
-                                    <p>I like various activities such as hiking, running, swimming, uphill MTB and etc.<br>
-                                        Keep challenging and breaking through the limit.
+                                    <p>
+                                        To stay healthy and break through the limit,<br>
+                                        I do hiking, running, MTB, swimming.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col col-sm-6 h-100" id="positive">
+                    <div class="col-12 col-sm-6">
                         <div class="propContainer">
                             <img src="img/positive.jpg" alt="positive" class="propImage">
                             <div class="textContainer">
                                 <div class="propText">
                                     <h1>Positive</h1>
-                                    <p>Living a life is not easy, but nothing is impossible with a strong mindset.
-                                        I have 3 phrases keeping my mind positive.</p>
-                                    <p>"Even better."<br>"This can be happen."<br>"It will be done somehow."</p>
+                                    <p>Nothing is impossible with strong mindset.
+                                        Remember 3 phrases.<br>
+                                        "Even better."<br>"This can be happen."<br>"It will be done somehow."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="row mt-3" style="height:40%">
-                    <div class="col col-sm-6 h-100" id="analytic">
+                    <div class="col-12 col-sm-6">
                         <div class="propContainer">
                             <img src="img/analytic.jpg" alt="analytic" class="propImage">
                             <div class="textContainer">
@@ -81,7 +78,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-sm-6 h-100" id="organized">
+                    <div class="col-12 col-sm-6">
                         <div class="propContainer">
                             <img src="img/planning.jpg" alt="organized" class="propImage">
                             <div class="textContainer">
@@ -99,8 +96,8 @@
             </div>
 
 
-            <div class="col-sm-1 sideBar">
-                <nav class="d-flex flex-column p-3">      
+            <div class="col-12 col-sm-1 sideBar">
+                <nav class="nav d-flex flex-sm-column p-3">      
                     <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dan_dh_choi/">Instagram</a>
                     <hr>
                     <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-daehyun-choi-615355234/">Linkedin</a>
@@ -112,9 +109,8 @@
     </div>
 
     <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 </body>

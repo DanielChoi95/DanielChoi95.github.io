@@ -1,33 +1,75 @@
 /* index.html */
 html,body {
     height: 100%;
+    width: 100%;
   }
 
 .sideBar {
-    background:rgb(0,0,0);
+    background:rgba(0, 0, 0);
     color: rgb(255,255,255);
-    height: 100%;
-    text-align: center;
-    padding: 10px;
-    display: flex;
+    /* height: 100%; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    text-align: center;
 }
 
-.indexCenter {
-    height: 100%;
+.nav {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+
+.title {
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  background: rgb(0,0,0);
+  color: #fff;
+  border: 1px solid white;
+}
+
+.center {
     background:rgb(0,0,0);
+    color: #fff;
+    height: 100%;
 }
 
-#video-container  {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
+#videoContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#videoContainer video {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#darkOverlay {
+  z-index:2;
+}
+
+#intro {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:3;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
 #video-container video,
   .video-overlay {
     position: absolute;
@@ -88,20 +130,6 @@ html,body {
   }
 
 /* about.html */
-.otherCenter{
-    height: 100%;
-    background:rgb(0,0,0);
-    color:#fff;
-}
-
-.title {
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 10%;
-    font-size:x-large;
-}
-
 .propContainer {
   position: relative;
   height: 100%;
@@ -119,8 +147,8 @@ html,body {
 .textContainer {
   transition: .5s ease;
   opacity: 0;
-  position: absolute;
-  top: 50%;
+  position:absolute;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -137,8 +165,7 @@ html,body {
 
 .propText {
   color: white;
-  font-size: 16px;
-  padding: 16px 28px;
+  font-size:1rem;
 }
 
 /* project.html */
